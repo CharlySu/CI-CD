@@ -1,5 +1,3 @@
-const estoEsElErrorDePrueba1 = "variable huefana"
-
 const express = require('express');
 const { createService } = require('./taskService');
 function createApp(repository) {
