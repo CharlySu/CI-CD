@@ -2,6 +2,7 @@ const express = require('express');
 const { createService } = require('./taskService');
 function createApp(repository) {
   const app = express();
+  const variableSinUsar = 123;
   const service = createService(repository);
   app.use(express.json());
   app.get('/health', (req, res) => res.json({ status: 'ok' }));
